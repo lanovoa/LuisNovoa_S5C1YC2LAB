@@ -1,0 +1,9 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy as sc
+from scipy.fftpack import fft, ifft
+
+moonlanding = plt.imread('moonlanding.png')
+t = np.fft.fft2(moonlanding)
+ts = np.fft.fftshift(moonlanding)
+
